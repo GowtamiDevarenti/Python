@@ -1,6 +1,7 @@
 
 #Part A – Scope
-#1.Create a global variable course_name and a function that creates a local variable with the same name. 
+#1.Create a global variable course_name and a function that creates
+# a local variable with the same name. 
 # Print both and explain the result.
 
 course_name = "Python Programming"   # Global variable
