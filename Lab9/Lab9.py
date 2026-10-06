@@ -250,3 +250,34 @@ savings = SavingsAccount("Gowtami", 5000, 2.5)
 
 print(normal)
 print(savings)
+
+
+#Part G: Inheritance or composition?
+
+# 1. CPU class
+class CPU:
+    def __init__(self, model):
+        self.model = model
+
+
+# 2. Computer class that HAS a CPU (composition)
+class Computer:
+    def __init__(self, brand, cpu):
+        self.brand = brand
+        self.cpu = cpu      # a CPU object stored inside the Computer
+
+
+# 3. Create a CPU and pass it to a Computer
+my_cpu = CPU("Intel Core i7")
+my_computer = Computer("Dell", my_cpu)
+
+# 4. Print through the Computer object
+print("Brand:", my_computer.brand)
+print("CPU model:", my_computer.cpu.model)
+
+# 5. "Computer HAS-A CPU" makes more sense than "Computer IS-A CPU":
+#    A computer is not a kind of processor. It is a larger machine that
+#    contains a processor as one of its parts. Composition also lets us
+#    swap the CPU for a different one without changing the Computer class,
+#    and a Computer can contain other parts too (RAM, disk) without
+#    forcing a false parent-child relationship.
