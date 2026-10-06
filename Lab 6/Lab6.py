@@ -1,5 +1,6 @@
 #Part A — Conditions
-#1. Create squares for numbers 1–20 using a normal loop, then a list comprehension.
+#1. Create squares for numbers 1–20 using a normal loop, 
+# then a list comprehension.
 squares = []
 
 for number in range(1, 21):
@@ -496,7 +497,7 @@ scores = [65, 72, 81, 90]
 
 #I opened the shared ChatGPT conversation, but its contents aren’t available to me through the shared-page view.
 
-Please paste the relevant conversation here (or upload screenshots), and I can continue from exactly where it left off.
+"""Please paste the relevant conversation here (or upload screenshots), and I can continue from exactly where it left off.
 
 printnt all the qustionns in this limk Lab 6.pdf
 
@@ -513,7 +514,7 @@ I analyzed the uploaded Lab 6.pdf. It is a 3-page scanned PDF, so the text layer
 
 Below I’ve kept the original question order and wording, followed by simple, human-readable Python for each task.
 
-Lab 6 — Questions + Humanized Python Solutions
+Lab 6 — Questions + Humanized Python Solutions"""
 Part A — List Comprehensions
 1. Create squares for numbers 1–20 using a normal loop, then a list comprehension.
 

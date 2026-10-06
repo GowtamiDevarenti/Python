@@ -1,0 +1,128 @@
+generate the python code as per the below project details. coding standard should be like a medium level programmer.
+
+Throughout Python Fundamentals, you have built a toolbox for solving programming problems with Python.
+During the course, we have worked with:
+variables, data types and operators
+strings and type conversion
+lists, tuples, sets and dictionaries
+conditions and loops
+functions, parameters and return values
+default and keyword arguments
+type hints and docstrings
+scope
+•ergs and *'kwargs
+unpacking
+list, dictionary and set comprehensions
+enumerate() and zip()
+lambda functions
+mapo and filter()
+classes and objects
+This Is Not a Checklist
+attributes, methods and object state
+instance and class attributes
+collections of objects
+objects containing other objects
+inheritance and super()
+method overriding
+polymorphism
+• duck typing
+is instance()
+IS-A and HAS-A relationships
+composition
+Validation
+You are not expected to use everything above in your project.
+Think Of What you have learned as a toolbox. A programmer does not use every tool in every program. An
+important part Of programming is deciding Which tool makes sense for the problem you are trying to solve.
+Sometimes a list is enough. Sometimes a dictionary is a better choice. Sometimes there is a good reason to
+create a class. In some situations inheritance is a natural solution, While composition may be more appropriate
+in Others.
+using more python concepts does not automatically make a program better.
+In this project, you Will use What you have learned to plan, build and develop a complete python program.
+You Will choose between three different project themes. All three have the same core expectations, but you have
+freedom in how you design and develop your solution.
+The goal is to build a program that works, has a thoughtful structure and contains code and design choices that
+you understand and can explain.
+Python Fundamentals - Final Project
+Below is the project
+Option 3 - Meeting room Booking System
+Build a Python program for managing meeting room bookings.
+
+The system should contain different types of objects that interact with each other.
+For example, a booking could connect a customer with something that can be booked.
+Bookings should have meaningful behaviour. They might be created, cancelled, changed or checked in different
+ways.
+The system should keep track of its current state while the program is running.
+You decide how bookings, customers, resources and other parts of your system should be represented and how
+they relate to each other.
+NO database or permanent data storage is required. The data only needs to exist While the program is
+running.
+Possible ideas
+different types Of bookable resources or services
+customers
+availability
+booking Status
+preventing conflicting bookings
+prices or costs
+different booking rules
+searching and filtering bookings
+statistics
+summaries of available and booked resources
+
+Core Expectations
+Regardless of which project you choose, the following describes the expected foundation of your project.
+These expectations describe what your project should demonstrate, not exactly how you should build it.
+
+Build a Complete and Connected Program
+Your project should be one complete system rather than a collection of separate exercises or unrelated code
+examples.
+The different parts of your program should work together.
+
+Use Object-Oriented Programming
+Your program should contain multiple classes with clear responsibilities.
+Create objects from your classes and use them as meaningful parts of your system. Your classes should contain
+relevant attributes and methods.
+
+Create Relationships and Interactions Between Objects
+Objects in your system should not exist completely independently from each other.
+They should interact, contain other objects, work with other objects or otherwise be connected as part of the
+system.
+You decide how these relationships should be designed.
+
+Actions Should Affect the State Of Your System
+Actions should have actual consequences in your program.
+Something in your system should change as the program runs, and those changes should affect what can
+happen later.
+The program should not simply create objects and print different messages.
+
+Work With Collections Of Data or Objects
+Your program should manage multiple pieces Of information or multiple Objects using appropriate python
+collections.
+Choose the collection types that make sense for your solution.
+
+Include Meaningful Program Logic
+use conditions, Loops, functions and/or methods to solve problems and control how the system behaves.
+Avoid building a program that mainly consists Of hard-coded values and print statements.
+
+Handle Invalid or Unreasonable Actions
+Your program should prevent or handle situations that do not make sense Within your system.
+What those situations are Will depend on your project. You are responsible for deciding Which situations your
+program needs to protect against.
+Python Fundamentals - Final Project
+
+Organize the Project Into Multiple Python Modules
+Your complete project should not be implemented in one large Python file.
+Divide your code into multiple .pyfiles in a way that makes sense for your program.
+There is no required number of files or required file structure. The important part is that your organization has a
+purpose.
+
+Make the Program Runnable and Demonstrable
+There should be a clear way to start your project and demonstrate its main functionaüty.
+The program should run without errors during its normal intended use.
+
+
+When You Are Finished
+Include a short README. md explaining:
+• What your project does
+its main functionality
+how to run the program
+The README should be short and clear. It is not a separate report.

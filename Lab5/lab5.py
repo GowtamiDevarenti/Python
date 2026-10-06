@@ -17,7 +17,8 @@ show_course()
 print("Outside the function:", course_name)
 
 
-#2.Create a function with a local counter and show that it does not remain available outside the function.
+#2.Create a function with a local counter and show that it does not
+# remain available outside the function.
 
 def count_students():
     counter = 10
@@ -26,23 +27,12 @@ def count_students():
 
 count_students()
 
-# This would give an error because counter only exists inside the function.
+# This would give an error because counter only exists inside
+# the function.
 #print(counter)
 
 #3.Create a function that attempts to modify a global numeric variable without global. Observe/describe the problem,
 # then rewrite the design to return the new value instead.
-
-score = 10
-
-
-def increase_score(current_score):
-    new_score = current_score + 5
-    return new_score
-
-
-score = increase_score(score)
-
-print("New score:", score)
 
 score = 10
 
@@ -101,7 +91,7 @@ def add_all(*numbers):
     return total
 
 
-answer = add_all(10, 20, 30, 40)
+answer = add_all(10, 20, 30, 40,60)
 
 print("Total:", answer)
 
@@ -156,7 +146,8 @@ result = build_sentence(" ", "Python", "is", "easy", "to", "learn")
 
 print(result)
 
-#5.Write describe_scores(student_name, *scores) returning name, number of scores and average.
+#5.Write describe_scores(student_name, *scores) returning name,
+# number of scores and average.
 
 def describe_scores(student_name, *scores):
 
@@ -184,7 +175,8 @@ print("Average:", average_score)
 
 #Part C – Positional Unpacking
 
-#1.Create a list [10, 20, 30] and unpack it into a function expecting three positional parameters.
+#1.Create a list [10, 20, 30] and unpack it into a function expecting
+# three positional parameters.
 
 def show_numbers(first, second, third):
     print("First:", first)
@@ -196,7 +188,8 @@ numbers = [10, 20, 30]
 
 show_numbers(*numbers)
 
-#2.Create a tuple containing first_name, last_name, city and call a function using *tuple.
+#2.Create a tuple containing first_name, last_name, 
+# city and call a function using *tuple.
 
 def introduce(first_name, last_name, city):
     print(
@@ -254,13 +247,14 @@ show_profile(
 #info collects named arguments into a dictionary.
 #Then .items() gives us the key and value.
 
-show_profile(name="Anna", age=22)
+show_profile(name="Gowtami", age=22)
 {
-    "name": "Anna",
+    "name": "Gowtami",
     "age": 22
 }
 
-#2.Write create_user(username, **details) returning one dictionary containing username plus all supplied details.
+#2.Write create_user(username, **details) returning 
+# one dictionary containing username plus all supplied details.
 
 def create_user(username, **details):
 
@@ -274,7 +268,7 @@ def create_user(username, **details):
 
 
 user = create_user(
-    "anna123",
+    "Gowtami123",
     age=22,
     city="Stockholm",
     course="Python"
@@ -307,7 +301,8 @@ product = build_product(
 
 print(product)
 
-#4.Write a function that accepts **settings and returns only settings whose value is not None.
+#4.Write a function that accepts **settings and returns 
+# only settings whose value is not None.
 
 
 def useful_settings(**settings):
@@ -332,15 +327,16 @@ settings = useful_settings(
 print(settings)
 
 
-#5.Call a normal named-parameter function using ** dictionary unpacking. Ensure dictionary keys match parameter names.
+#5.Call a normal named-parameter function using ** dictionary unpacking.
+#Ensure dictionary keys match parameter names.
 
 def introduce(name, age, city):
     print(f"{name} is {age} years old and lives in {city}.")
 
 
 person = {
-    "name": "Gowtami",
-    "age": 30,
+    "name": "Mayookha",
+    "age": 5,
     "city": "Gothenburg"
 }
 
@@ -452,7 +448,8 @@ print(student)
 #So **kwargs is useful when the number or names of extra options can vary, 
 # while explicit parameters are useful when the required information is known.
 
-#4.Create at least three calls to the same flexible function with substantially different numbers of arguments
+#4.Create at least three calls to the same flexible function with 
+# substantially different numbers of arguments
 
 def add_all(*numbers):
 
@@ -475,7 +472,8 @@ print(add_all(1, 2, 3, 4, 5, 6))
 
 
 #Part F – Applied Challenge: Report Builder
-#1. Build a flexible report system without files. create_report(title, *sections, **metadata)
+#1. Build a flexible report system without files. 
+# create_report(title, *sections, **metadata)
 # should return a dictionary.
 
 def create_report(title, *sections, **metadata):
@@ -488,7 +486,8 @@ def create_report(title, *sections, **metadata):
     return report
 
 
-#2. Each section can be a string or a small dictionary; choose and document your design.
+#2. Each section can be a string or a small dictionary; 
+# choose and document your design.
 
 def create_report(title, *sections, **metadata):
     return {
@@ -558,7 +557,8 @@ report = create_report(
 
 print(summarize_report(report))
 
-#5.Write count_words(*sections) that counts words across all supplied textual sections.
+#5.Write count_words(*sections) that counts words across 
+# all supplied textual sections.
 
 def count_words(*sections):
     total_words = 0
@@ -613,7 +613,8 @@ print(summarize_report(report1))
 print()
 print(summarize_report(report2))
 
-#7.Demonstrate at least one case where your function deliberately ignores or handles a missing optional metadata field.
+#7.Demonstrate at least one case where your function deliberately 
+# ignores or handles a missing optional metadata field.
 
 def create_report(title, *sections, **metadata):
     return {
@@ -633,7 +634,8 @@ report = create_report(
 print(report)
 
 #Part G – Stretch Challenges
-#1. Write merge_settings(defaults, **overrides) returning a new dictionary without modifying defaults.
+#1. Write merge_settings(defaults, **overrides) 
+# returning a new dictionary without modifying defaults.
 
 def merge_settings(defaults, **overrides):
     settings = defaults.copy()
@@ -657,7 +659,8 @@ new_settings = merge_settings(
 print("Default settings:", defaults)
 print("New settings:", new_settings)
 
-#2.Write call_summary(function_name, *args, **kwargs) returning a string describing what would be called.
+#2.Write call_summary(function_name, *args, **kwargs) 
+#returning a string describing what would be called.
 
 def call_summary(function_name, *args, **kwargs):
     parts = []
