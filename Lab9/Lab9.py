@@ -51,3 +51,48 @@ for notification in notifications:
 # that the method exists, not which class the object comes from. Each object
 # runs its own version of send(), so we get a different message each time.
 # This idea is called polymorphism ("many forms").
+
+#Part B - Polymorphism with inheritance
+
+#1. Create a base class Document with a title attribute and a method describe()
+
+class Document:
+    def __init__(self, title):
+        self.title = title
+
+    def describe(self):
+        return "This is a generic document."
+    
+
+#2. Create PDFDocument(Document) and TextDocument(Document).
+
+class PDFDocument(Document):
+    pass
+
+class TextDocument(Document):
+    pass
+
+# 3. Override describe() in both subclasses so they return different descriptions.
+
+class PDFDocument(Document):
+    def describe(self):
+        return "A PDF file with fixed layout, ideal for sharing and printing."
+
+class TextDocument(Document):
+    def describe(self):
+        return "A plain text file containing simple, unformatted content."
+    
+#4. Create several PDFDocument and TextDocument objects and store them in one list.
+
+documents = [
+    PDFDocument("Annual Report"),
+    TextDocument("Meeting Notes"),
+    PDFDocument("Invoice #1042"),
+    TextDocument("Shopping List"),
+]
+
+
+#5.Loop through the list and print each document's title and the result of describe().
+
+for doc in documents:
+    print(f"{doc.title}: {doc.describe()}")
