@@ -48,31 +48,23 @@ WHERE city IN ('Stockholm', 'Göteborg');
 
 
 -- Question 10
+
 SELECT name AS product, price AS price_sek
 FROM products;
 
 --Bonus 1 — Clothing or Shoes AND price &gt; 1000
+
 SELECT *
 FROM products
 WHERE (category = 'Clothing' OR category = 'Shoes')
-  AND price &gt; 1000;
-  
+  AND price  >  1000;
+
+ 
  --Bonus 2 — Calculate total stock value
 
  
-SELECT name,
+SELECT name, price, stock, price * stock AS stock_value  FROM products WHERE stock > 0 ORDER BY stock_value DESC;
 
-       price,
-
-       stock,
-
-       price * stock AS stock_value
-
-FROM products
-
-WHERE stock &gt; 0
-
-ORDER BY stock_value DESC;
 	 
 
 --Bonus 3. Customers whose first name has exactly 4 letters (4 rows)
@@ -104,17 +96,11 @@ LIMIT 5 OFFSET 5;
 --Bonus 5. Customers who joined before 2025 and don't live in Uppsala (4 rows)
 
 
-
-SELECT *
-
-FROM customers
-
-WHERE join_date &lt; '2025-01-01'
-
-  AND city &lt;&gt; 'Uppsala'
+SELECT * FROM customers WHERE joined_date < '2025-01-01' AND city != 'Uppsala' ORDER BY city, last_name;
 
 
-ORDER BY city ASC, last_name ASC;
+
+;
 
 
 
