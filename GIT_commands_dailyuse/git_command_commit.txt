@@ -1,0 +1,6 @@
+cd "C:\Users\Hey HP\Desktop\python"
+git status
+git add SQL/
+git status
+git commit -m "Add SQL lab files and webshop database"
+git push
