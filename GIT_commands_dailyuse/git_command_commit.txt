@@ -5,3 +5,15 @@ git status
 git commit -m "Add SQL lab files and webshop database"
 git push
  git remote -v
+
+
+ C:\sqlite\sqlite3.exe webshop.db    ------ To Run sql commands and to enter database
+
+ .quit -- to exit the database
+
+ cd .. -to go back to previous path 
+ for example:
+ PS C:\Users\Hey HP\Desktop\gowthami_py\SQL_tools> cd ..
+ PS C:\Users\Hey HP\Desktop\gowthami_py> 
+
+ 
