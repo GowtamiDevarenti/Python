@@ -4,3 +4,4 @@ git add SQL/
 git status
 git commit -m "Add SQL lab files and webshop database"
 git push
+ git remote -v
