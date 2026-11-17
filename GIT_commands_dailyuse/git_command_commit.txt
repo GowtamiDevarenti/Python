@@ -16,4 +16,4 @@ git push
  PS C:\Users\Hey HP\Desktop\gowthami_py\SQL_tools> cd ..
  PS C:\Users\Hey HP\Desktop\gowthami_py> 
 
- 
+ always push modifictaions to github from root folders(gowthamipy)
